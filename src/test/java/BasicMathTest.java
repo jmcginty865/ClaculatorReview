@@ -15,13 +15,33 @@ public class BasicMathTest {
 
     @Test
     public void testAddition() {
+
+        BasicMath BTM = new BasicMath();
+
         // Run the test
-        final int result = BTM.addition(0, 0);
+        final int result = BTM.addition(4,2);
 
         // Verify the results
-        Assert.assertEquals(0, result);
+        Assert.assertEquals(6, result);
     }
 
 
+    @Test
+    public void testSubtraction(){
+        BasicMath BTM = new BasicMath();
+
+        final int result = BTM.subtraction(5,3);
+
+        Assert.assertEquals(2, result);
+    }
+
+    @Test
+    public void testNegitiveNum(){
+        BasicMath BTM = new BasicMath();
+
+        final int result = BTM.subtraction(4,6);
+
+        Assert.assertEquals(-2, result);
+    }
 
 }
